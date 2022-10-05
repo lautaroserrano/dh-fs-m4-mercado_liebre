@@ -1,20 +1,115 @@
-@import url('https://fonts.googleapis.com/css2?family=Khula&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 * {
-    font-family: 'Khula', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+header, main, footer {
+    padding: 10px;
+}
+
+header {
+    background-color: #eac926;
+}
+
+main {
+    background-color: #ebebeb;
+    padding: 10px;
+}
+
+footer {
+    padding: 10px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 12px;
+}
+
+nav ul {
+    padding: 0;
+}
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a{
+    color: #000000;
+    text-decoration: none;
+}
+
+main section article {
+    width: 250px;
+    background-color: #ffffff;
+    border: solid 1px #d6d6d6;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+article img {
+    width: 200px
+}
+
+footer section article{
+    text-align: center;
+    margin: 20px;
+    padding: 0 40px;
+}
+
+footer h3, footer p {
+    margin: 0;
+    color: #666;
+}
+
+footer i.icon {
+    margin-bottom: 10px; 
+    font-size: 2em;
+    color: #1259c3;
 }
 
 #brand-logo {
     width: 200px
 }
 
+.hamburger-bottom {
+    text-align: center;
+}
 
-article {
-    width: 250px;
-    border: solid 1px black;
+.hamburger-bottom .icon{
+    font-size: 24px;
+    padding: 10px;
     border-radius: 4px;
+    color: #d6d6d6;
+    background-color: #1259c3;
+    border: solid 1px #1259c3;
 }
 
-article img {
-    width: 200px
+.description {
+    font-size: 16px;
 }
+
+.price {
+    font-size: 18px;
+}
+
+.discount {
+    font-size: 16px;
+}
+
+
+/* 
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a; 
+*/
