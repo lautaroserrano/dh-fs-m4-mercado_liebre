@@ -2,27 +2,14 @@
 
 * {
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    /* margin: 0px; */
+    padding: 0px;
 }
 
 body {
-    margin: 0;
-}
-
-header, main, footer {
-    padding: 10px;
-}
-
-header {
-    background-color: #eac926;
-}
-
-main {
+    margin: 0px;
     background-color: #ebebeb;
-    padding: 10px;
-}
-
-footer {
-    padding: 10px;
 }
 
 h2 {
@@ -33,8 +20,65 @@ p {
     font-size: 12px;
 }
 
+header {
+    background-color: #eac926;
+    padding: 20px;
+}
+
+#top-header{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#brand, #search-bar {
+    width: 50%
+}
+
+#brand-logo {
+    min-width: 130px;
+    max-width: 200px;
+    padding: 10px;
+}
+
+#search-bar {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    min-width: 120px;
+    height: 35px;
+    background-color: #ffffff;
+    border: solid 1px #d6d6d6;
+    border-radius: 4px;
+    padding: 2px;
+}
+
+#search-bar input, #search-bar button{
+    background-color: rgba(0,0,0,0);
+    border: none;
+}
+
+#search-bar input{
+    width: 90%;
+    padding: 10px 5px;
+}
+
+#search-bar button{
+    width: 30;
+    padding: 5px 5px;
+}
+
+#slogan {
+    display: block;
+    margin: auto;
+}
+
 nav ul {
     padding: 0;
+    display: none;
 }
 nav ul li {
     list-style-type: none;
@@ -45,18 +89,39 @@ nav ul li a{
     text-decoration: none;
 }
 
+main {
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+}
+
+main section {
+    margin: 10px 0;
+}
+
+main section .articles {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 main section article {
     width: 250px;
     background-color: #ffffff;
-    border: solid 1px #d6d6d6;
+    border: solid 1px #ebebeb;
     border-radius: 4px;
-    padding: 10px;
-    margin-bottom: 10px;
-    text-align: center;
+    padding: 15px;
+    margin: 10px;
 }
 
 article img {
-    width: 200px
+    display: block;
+    width: 150px;
+    margin: auto;
+}
+
+footer {
+    background-color: #ffffff;
+    padding: 10px;
 }
 
 footer section article{
@@ -76,8 +141,16 @@ footer i.icon {
     color: #1259c3;
 }
 
-#brand-logo {
-    width: 200px
+#shipping-logo{
+    display: block;
+    width: 30px;
+    height: 30px;
+    color: #39b54a;
+    border: #39b54a solid 1px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    font-size: 16px;
+    padding: 5px;
 }
 
 .hamburger-bottom {
@@ -95,6 +168,7 @@ footer i.icon {
 
 .description {
     font-size: 16px;
+    display: none;
 }
 
 .price {
@@ -103,8 +177,53 @@ footer i.icon {
 
 .discount {
     font-size: 16px;
+    color: #39b54a;
 }
 
+/* Tablet layout */
+@media (min-width: 361px) {
+
+    #top-header{
+        justify-content: space-between;
+    }
+
+    #brand, #search-bar {
+        width: 33%
+    }
+
+    #slogan {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        width: 40%;
+    }
+
+    .hamburger-bottom {
+        display: none;
+    }
+
+    main section article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .description {
+        display: block;
+    }
+}
+
+/* Desktop layout */
+/* @media (min-width: 769px) {} */
 
 /* 
 Azul: #03264C;
