@@ -180,6 +180,62 @@ footer i.icon {
     color: #39b54a;
 }
 
+form {
+    margin-top: 20px;
+}
+
+.form-control {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.form-control input, .form-control select{
+    display: block;
+    width: 50%;
+    padding: 5px;
+    margin: auto;
+}
+
+.form-control .checkbox, .form-control .file {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    margin: auto
+}
+
+.form-control .checkbox label {
+    display: inline-block;
+    width: 80%;
+}
+
+.form-control .checkbox input[type='checkbox'] {
+    display: inline;
+}
+
+.submit-control {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: 20px auto;
+}
+
+.submit-control button {
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+
+.submit-control button[type='submit'] {
+    background-color: #ffdc2a;
+}
+
+.submit-control button[type='submit']:hover {
+    background-color: #eac926;
+}
+
 /* Tablet layout */
 @media (min-width: 361px) {
 
@@ -226,6 +282,7 @@ footer i.icon {
 /* @media (min-width: 769px) {} */
 
 /* 
+Amarillo: #eac926;
 Azul: #03264C;
 Celeste: #1259c3;
 Gris oscuro: #666;

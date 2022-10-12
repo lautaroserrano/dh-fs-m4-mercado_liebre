@@ -16,5 +16,21 @@ app.get('/', (req, res) => {
     res.sendFile(path.resolve(__dirname, './views/home.html'));
 })
 
+app.route('/register')
+    .get((req, res) => {
+        res.sendFile(path.resolve(__dirname, './views/register.html'));
+    })
+    .post((req, res) => {
+        res.sendFile(path.resolve(__dirname, './views/register.html'));
+    })
+
+app.route('/login')
+    .get((req, res) => {
+        res.sendFile(path.resolve(__dirname, './views/login.html'));
+    })
+    .post((req, res) => {
+        res.sendFile(path.resolve(__dirname, './views/login.html'));
+    })
+
 
 app.listen(PORT, () => {console.log(`Server listening on port ${PORT}`)})
