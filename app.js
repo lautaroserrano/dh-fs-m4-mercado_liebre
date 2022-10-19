@@ -6,7 +6,7 @@ import dotenv from 'dotenv';
 const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
 
 dotenv.config(__dirname)
-const PORT = process.env.WEBSERVER_PORT || 8080 ;
+const PORT = process.env.PORT || 8080 ;
 
 const app = express();
 app.use(express.static('public'));
